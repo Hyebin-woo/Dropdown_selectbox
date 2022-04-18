@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>select-box</title>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section class="select-box">
+      <h2 class="hidden">Select box</h2>
+      <article class="cont-select">
+        <button class="btn-select">최애 프로그래밍 언어</button>
+        <ul class="option-select">
+          <li><button class="btn" type="button">Python</button></li>
+          <li><button class="btn" type="button">Java</button></li>
+          <li><button class="btn" type="button">JavaScript</button></li>
+          <li><button class="btn" type="button">C#</button></li>
+          <li><button class="btn" type="button">C/C++</button></li>
+        </ul>
+      </article>
+    </section>
+    <script>
+      const btn = document.querySelector(".btn-select");
+      const list = document.querySelector(".option-select");
+
+      btn.addEventListener("click", function () {
+        list.classList.toggle("on");
+        btn.classList.toggle("on");
+      });
+    </script>
+  </body>
+</html>

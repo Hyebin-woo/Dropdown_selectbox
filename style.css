@@ -1,0 +1,63 @@
+.select-box {
+  position: relative;
+  background-color: #e5e5e5;
+  width: 100vw;
+  height: 100vh;
+}
+article {
+  position: absolute;
+  width: 300px;
+  top: 200px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 0 10px 0;
+  border-radius: 10px;
+}
+.btn-select {
+  font-size: 12px;
+  width: 200px;
+  border-radius: 10px;
+  border: 1px solid #c4c4c4;
+  text-align: left;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  line-height: 12px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.btn-select:hover {
+  border: 1px solid #9b51e0;
+  box-shadow: 0 0 0 3px #f8e4ff;
+}
+
+.option-select {
+  display: none;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 클릭했을 때 */
+.option-select {
+  display: block;
+  box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 100%;
+  border: 1px solid #c4c4c4;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 4px 0;
+}
+
+.option-select .btn {
+  background-color: #fff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 12px 18px;
+}
