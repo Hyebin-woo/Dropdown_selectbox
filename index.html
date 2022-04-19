@@ -10,7 +10,7 @@
   </head>
   <body>
     <section class="select-box">
-      <h2 class="hidden">Select box</h2>
+      <h2 class="txt-hide">Select box</h2>
       <article class="cont-select">
         <button class="btn-select">최애 프로그래밍 언어</button>
         <ul class="option-select">
@@ -29,6 +29,12 @@
       btn.addEventListener("click", function () {
         list.classList.toggle("on");
         btn.classList.toggle("on");
+      });
+      list.addEventListener("click", (event) => {
+        if (event.target.nodeName === "BUTTON") {
+          btn.innerText = event.target.innerText;
+          list.classList.remove("on");
+        }
       });
     </script>
   </body>

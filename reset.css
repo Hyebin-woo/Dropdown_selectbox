@@ -124,7 +124,7 @@ img {
   display: block;
   width: 100%;
 }
-.hidden {
+.txt-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
   width: 1px;
@@ -136,4 +136,11 @@ button {
   text-decoration: none;
   border: 0;
   outline: 0;
+}
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
