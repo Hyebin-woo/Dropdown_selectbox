@@ -14,12 +14,18 @@
   border-radius: 10px;
   background-color: #fff;
   cursor: pointer;
-  background: url(./images/icon_down.png) no-repeat;
+  background: url(./images/icon_down.png);
+  background-repeat: no-repeat;
   background-position: right 14px center;
   /* 텍스트가 넘치지 않게 */
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+.btn-select.on {
+  background: url(./images/icon_up.png);
+  background-repeat: no-repeat;
+  background-position: right 14px center;
 }
 
 .btn-select {
