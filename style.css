@@ -1,3 +1,22 @@
+ol,
+ul {
+  list-style: none;
+}
+
+.txt-hide {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+}
+button {
+  text-decoration: none;
+  border: 0;
+  outline: 0;
+}
+
 .select-box {
   width: 200px;
   margin: 100px auto 0;
